@@ -131,7 +131,18 @@ button {
   color: white;
   cursor: pointer;
 }
-
+.btn-pause {
+  color: white;
+  background-color: #15c2b8;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  border: none;
+  padding: 16px 23px 15px 23px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+}
 .btn-start::before {
   content: "";
   display: inline-block;

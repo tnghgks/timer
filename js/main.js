@@ -17,6 +17,9 @@ function handleInput(event) {
 function handleStart(event) {
   event.preventDefault();
   let time = parseInt($inputHrs.value) * 3600 + parseInt($inputMin.value) * 60 + parseInt($inputSec.value);
+  $btnPause.textContent = "Pause";
+  $btnPause.classList.add("btn-pause");
+  $btnReset.insertAdjacentElement("beforebegin", $btnPause);
 
   if (isNaN(time) || time === 0) {
     return;
@@ -80,6 +83,7 @@ const $btnReset = document.querySelector(".btn-reset");
 const $btnPause = document.createElement("button");
 
 let timer;
+
 $inputHrs.addEventListener("input", handleInput);
 $inputMin.addEventListener("input", handleInput);
 $inputSec.addEventListener("input", handleInput);
