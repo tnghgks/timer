@@ -30,10 +30,11 @@ function handleStart(event) {
       $inputSec.value = "00";
       $btnStart.classList.remove("on");
       $btnReset.classList.remove("on");
+      return;
     }
 
     time--;
-    console.log(time);
+
     min = Math.floor(time / 60);
     hour = Math.floor(min / 60);
     sec = time % 60;
