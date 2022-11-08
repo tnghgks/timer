@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIMER</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="ir">weniv</h1>
+        <img class="img-weniv-logo" src="assets/weniv-logo.png" alt="weniv-logo" />
+      </header>
+      <article class="article-timer">
+        <h2 class="h2-timer">TIMER</h2>
+        <div class="hr"></div>
+        <form id="form-timer">
+          <ul class="ul-timer">
+            <li class="li-hrs">
+              <label for="input-hrs">HRS</label>
+              <input type="number" name="input-hrs" id="input-hrs" value="00" min="0" max="60" />
+            </li>
+            <li class="li-colon">:</li>
+            <li class="li-min">
+              <label for="input-min">MIN</label>
+              <input type="number" name="input-min" id="input-min" value="00" min="0" max="60" />
+            </li>
+            <li class="li-colon">:</li>
+            <li class="li-sec">
+              <label for="input-sec">SEC</label>
+              <input type="number" name="input-sec" id="input-sec" value="00" min="0" max="60" />
+            </li>
+          </ul>
+          <div class="div-btn-container">
+            <button class="btn-start">START</button>
+            <button class="btn-reset">RESET</button>
+          </div>
+        </form>
+      </article>
+      <footer>ⓒ WENIV Corp.</footer>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
